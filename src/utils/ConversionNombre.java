@@ -16,7 +16,7 @@ public class ConversionNombre {
 		System.out.println("Methode ParseInt de la classe Integer sur le string chaine : " + resultat);
 		System.out.print("Instance of Integer ? : ");
 		
-		System.out.println(Integer.class.isInstance(resultat));
+		//System.out.println(Integer.class.isInstance(resultat));
 		
 		System.out.println(((Object)resultat).getClass().getName());
 		
