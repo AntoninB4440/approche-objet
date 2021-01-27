@@ -7,6 +7,7 @@ public class TestPersonne {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		/*//Méthode sans construteur
 		Personne personne1 = new Personne();
 		personne1.nom = "Barcelo";
 		personne1.prenom = "Antonin";
@@ -16,6 +17,13 @@ public class TestPersonne {
 		personne2.nom = "Rates";
 		personne2.prenom = "Ana";
 		personne2.adressePostale = "25 Rue des Impasses 40320 Buanes";
+		*/
+		
+		//Constructeur vide
+		Personne personne1 = new Personne();
+		
+		//Construteur avec paramètre
+		Personne personne2 = new Personne("Rates","Ana","Rue des Impasses 40320 Buanes");
 		
 		
 	}
