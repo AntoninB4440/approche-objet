@@ -8,8 +8,7 @@ public class TestBanque {
 		Compte compte1 = new Compte(85236974,15000);
 		
 		//Tp 1
-		System.out.println("N° de compte : " +  compte1.numeroCompte);
-		System.out.println("Votre solde : " + compte1.soldeCompte + " € ");
+		System.out.println(compte1);
 		
 	}
 

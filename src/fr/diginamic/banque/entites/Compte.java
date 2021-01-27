@@ -9,5 +9,13 @@ public class Compte {
 		this.numeroCompte = numeroCompte;
 		this.soldeCompte = soldeCOmpte;
 	}
+
+	//TP2
+	@Override
+	public String toString() {
+		return "N° de Compte : " + numeroCompte + "\nVotre Solde : " + soldeCompte;
+	}
+	
+	
 	
 }
