@@ -21,6 +21,13 @@ public class AdressePostale {
 		this.ville = ville;
 	}
 
+	@Override
+	public String toString() {
+		return "J'habite à l'adresse suivante : " + numeroRue + " " + nomRue + " " + codePostal + " " + ville;
+	}
+	
+	
+
 }
 
 

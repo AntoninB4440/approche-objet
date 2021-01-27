@@ -31,10 +31,15 @@ public class Personne {
 		return "Mon prénom est " + prenom ;
 	}
 	
-	public String getAdresse() {
-		return "J'habite à l'adresse suivante : " + adressePostale.numeroRue + " " + adressePostale.nomRue + " " + adressePostale.codePostal + " " + adressePostale.ville;
+	public AdressePostale getAdresse() {
+		return adressePostale;
 	}
 	
+	@Override
+	public String toString() {
+		return "Personne [adressePostale=" + adressePostale + "]";
+	}
+
 	public void setNom (String nom) {
 		this.nom = nom;
 	}
