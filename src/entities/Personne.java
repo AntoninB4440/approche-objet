@@ -1,17 +1,19 @@
 package entities;
 
+import entities.AdressePostale;
+
 public class Personne {
 	private String nom;
 	private String prenom;
-	private String adressePostale;
+	private AdressePostale adressePostale;
 
 	public Personne() {
 		nom = "Antonin";
 		prenom = "Barcelo";
-		adressePostale = "128 Impasse des Nymphéas 44300 Nantes";
+		adressePostale = new AdressePostale();
 	}
 	
-	public Personne(String nom, String prenom, String adressePostale) {
+	public Personne(String nom, String prenom, AdressePostale adressePostale) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adressePostale = adressePostale;
@@ -30,7 +32,7 @@ public class Personne {
 	}
 	
 	public String getAdresse() {
-		return "J'habite à l'adresse suivante : " + adressePostale;
+		return "J'habite à l'adresse suivante : " + adressePostale.numeroRue + " " + adressePostale.nomRue + " " + adressePostale.codePostal + " " + adressePostale.ville;
 	}
 	
 	public void setNom (String nom) {
@@ -41,7 +43,7 @@ public class Personne {
 		this.prenom = prenom;
 	}
 	
-	public void setAdresse(String adressePostale) {
+	public void setAdresse(AdressePostale adressePostale) {
 		this.adressePostale = adressePostale;
 	}
 	
