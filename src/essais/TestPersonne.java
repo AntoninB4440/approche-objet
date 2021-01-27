@@ -25,6 +25,13 @@ public class TestPersonne {
 		//Construteur avec paramètre
 		Personne personne2 = new Personne("Rates","Ana","Rue des Impasses 40320 Buanes");
 		
+		//Construteur avec paramètre
+		Personne personne3 = new Personne("Depardieu","Gerard","25 Vladimir Road Russia");
+		personne3.setAdresse("Avenue des Champs Elysées Paris");
+		
+		System.out.println(personne3.getPrenomNom());
+		System.out.println(personne3.getAdresse());
+		
 		
 	}
 

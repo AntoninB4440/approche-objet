@@ -1,9 +1,9 @@
 package entities;
 
 public class Personne {
-	public String nom;
-	public String prenom;
-	public String adressePostale;
+	private String nom;
+	private String prenom;
+	private String adressePostale;
 
 	public Personne() {
 		nom = "Antonin";
@@ -14,6 +14,34 @@ public class Personne {
 	public Personne(String nom, String prenom, String adressePostale) {
 		this.nom = nom;
 		this.prenom = prenom;
+		this.adressePostale = adressePostale;
+	}
+	
+	public String getPrenomNom() {
+		return "Bonjour je suis " + prenom + " " + nom.toUpperCase();
+	}
+	
+	public String getNom() {
+		return "Mon nom de famille est " + nom ;
+	}
+	
+	public String getPrenom() {
+		return "Mon prénom est " + prenom ;
+	}
+	
+	public String getAdresse() {
+		return "J'habite à l'adresse suivante : " + adressePostale;
+	}
+	
+	public void setNom (String nom) {
+		this.nom = nom;
+	}
+	
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	
+	public void setAdresse(String adressePostale) {
 		this.adressePostale = adressePostale;
 	}
 	
