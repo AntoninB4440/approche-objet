@@ -1,10 +1,10 @@
 package fr.diginamic.banque.entites;
 
-class CompteTaux extends Compte{
+public class CompteTaux extends Compte{
 	
 	private double taux;
 	
-	CompteTaux(long numeroCompte, double soldeCOmpte, double taux) {
+	public CompteTaux(long numeroCompte, double soldeCOmpte, double taux) {
 		super(numeroCompte,soldeCOmpte);
 		this.taux = taux;
 	}

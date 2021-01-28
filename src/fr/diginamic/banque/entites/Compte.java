@@ -1,6 +1,6 @@
 package fr.diginamic.banque.entites;
 
-class Compte {
+public class Compte {
 	
 	private long numeroCompte;
 	private double soldeCompte;
