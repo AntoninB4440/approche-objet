@@ -17,7 +17,7 @@ public class Cercle implements ObjetGeometrique{
 	@Override
 	public double surface() {
 		// TODO Auto-generated method stub
-		return Math.PI*Math.pow(rayon, rayon);
+		return Math.PI*Math.pow(rayon, 2);
 	}
 
 	public double getRayon() {

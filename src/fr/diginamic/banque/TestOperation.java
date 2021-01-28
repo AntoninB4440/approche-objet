@@ -20,14 +20,17 @@ public class TestOperation {
 		
 		for (int i = 0; i < tableauOperation.length; i++) {
 			System.out.println(tableauOperation[i].getDateOperation());
+			
 			System.out.println("Montant de l'opération : " + tableauOperation[i].getMontantOperation() + " €");
 			System.out.println(tableauOperation[i].afficherType());
 			
 			
 			if (tableauOperation[i].afficherType() == "Crédit") {
 				montantGlobal += tableauOperation[i].getMontantOperation();
-			} else if (tableauOperation[i].afficherType() == "Débit") {
+				
+			} else if (tableauOperation[i].afficherType().equalsIgnoreCase("Débit")) {
 				montantGlobal -= tableauOperation[i].getMontantOperation();
+				
 			}
 			System.out.println("Montant total après opération : " + montantGlobal + " €");
 			System.out.println("-------------------");
