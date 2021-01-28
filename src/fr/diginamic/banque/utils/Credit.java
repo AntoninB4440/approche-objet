@@ -11,18 +11,10 @@ public class Credit extends Operation{
 		return "Date de l'opréation : " + dateOperation;
 	}
 
-	public void setDateOperation(String dateOperation) {
-		this.dateOperation = dateOperation;
-	}
-
 	public double getMontantOperation() {
 		return montantOperation;
 	}
 
-	public void setMontantOperation(double montantOperation) {
-		this.montantOperation = montantOperation;
-	}
-	
 	public String afficherType() {
 		return "Crédit";
 	};
