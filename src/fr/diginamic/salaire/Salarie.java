@@ -1,7 +1,7 @@
 package fr.diginamic.salaire;
 
-public class Salarie extends Intervenant{
-	
+public class Salarie extends Intervenant {
+
 	private double salaire;
 	private String contrat;
 
@@ -11,7 +11,7 @@ public class Salarie extends Intervenant{
 		this.salaire = salaire;
 		this.contrat = contrat;
 	}
-	
+
 	public String getContrat() {
 		return contrat;
 	}
@@ -33,15 +33,13 @@ public class Salarie extends Intervenant{
 	@Override
 	public String afficherDonnees() {
 		// TODO Auto-generated method stub
-		return "Statut : "  + this.toString() + "\nNom : " + super.getNom() + "\nPrenom : " + super.getPrenom() + "\nSalaire : " + this.getSalaire() + " €";
+		return "Statut : " + this.toString() + "\nNom : " + super.getNom() + "\nPrenom : " + super.getPrenom()
+				+ "\nSalaire : " + this.getSalaire() + " €";
 	}
 
 	@Override
 	public String toString() {
 		return "Salarié";
 	}
-	
-	
 
-	
 }

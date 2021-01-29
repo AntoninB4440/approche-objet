@@ -17,6 +17,17 @@ public class Pigiste extends Intervenant{
 		// TODO Auto-generated method stub
 		return nbJours*tauxJour;
 	}
+	
+	@Override
+	public String afficherDonnees() {
+		// TODO Auto-generated method stub
+		return "Statut : "  + this.toString() + "\nNom : " + super.getNom() + "\nPrenom : " + super.getPrenom() + "\nSalaire : " + this.getSalaire() + " €";
+	}
+
+	@Override
+	public String toString() {
+		return "Pigiste";
+	}
 
 	public int getNbJours() {
 		return nbJours;
@@ -34,16 +45,7 @@ public class Pigiste extends Intervenant{
 		this.tauxJour = tauxJour;
 	}
 
-	@Override
-	public String afficherDonnees() {
-		// TODO Auto-generated method stub
-		return "Statut : "  + this.toString() + "\nNom : " + super.getNom() + "\nPrenom : " + super.getPrenom() + "\nSalaire : " + this.getSalaire() + " €";
-	}
-
-	@Override
-	public String toString() {
-		return "Pigiste";
-	}
+	
 	
 	
 
