@@ -2,10 +2,10 @@ package fr.diginamic.entites;
 
 public class Theatre {
 	
-	String nom;
-	int capacitéMax;
-	int totalClient = 0;
-	double recetteDouble;
+	private String nom;
+	private int capacitéMax;
+	private int totalClient = 0;
+	private double recetteDouble;
 	
 	public Theatre(String nom, int capacitéMax) {
 		this.nom = nom;
