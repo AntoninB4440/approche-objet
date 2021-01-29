@@ -6,11 +6,12 @@ public class Carre extends Rectangle{
 		super(longueur,longueur);
 	}
 
-	public double getLongueur() {
-		return super.getLongueur();
-	}
-
 	public void setLongueur(double longueur) {
+		super.setLongueur(longueur);
+		super.setLargeur(longueur);
+	}
+	
+	public void setLargeur(double longueur) {
 		super.setLongueur(longueur);
 		super.setLargeur(longueur);
 	}
