@@ -7,12 +7,12 @@ public class TestTheatre {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Theatre theatre1 = new Theatre("Mozart", 20);
+		Theatre theatre1 = new Theatre("Mozart", 50);
 
 		// theatre1.inscription(15, 15.5);
 
-		theatre1.inscription(15, 15.5);
-		theatre1.inscription(4, 15.5);
+		theatre1.inscription(50, 15);
+		theatre1.inscription(40, 15.5);
 		theatre1.inscription(1, 15.5);
 		theatre1.inscription(1, 15.5);
 

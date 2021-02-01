@@ -37,15 +37,17 @@ public class Theatre {
 	}
 
 	public void inscription(int nbClient, double prixPlace) {
-		if (capacitéMax > totalClient) {
-			totalClient += nbClient;
-			recetteDouble += nbClient * prixPlace;
-		} else if (capacitéMax < nbClient) {
-			recetteDouble += (capacitéMax - totalClient) * prixPlace;
-			totalClient += capacitéMax - totalClient;
-			System.out.println(theatreComplet());
+		if (capacitéMax >= totalClient && (nbClient > 0 && prixPlace > 0)) {
+			if (capacitéMax - totalClient > nbClient) {
+				totalClient += nbClient;
+				recetteDouble += nbClient * prixPlace;
+			} else if (capacitéMax - totalClient <= nbClient) {
+				recetteDouble += (capacitéMax - totalClient) * prixPlace;
+				totalClient += capacitéMax - (totalClient);
+				System.out.println(theatreComplet());
+			}
 		} else {
-			System.out.println(theatreComplet());
+			System.out.println(theatreComplet() + " et/ou nbClient et/ou prix place <0");
 		}
 	}
 
