@@ -6,14 +6,21 @@ public class Cercle {
 	public Cercle(double rayon) {
 		this.rayon = rayon;
 	}
-	
+
 	public double perimetre() {
-		return 2*Math.PI*rayon;
+		return 2 * Math.PI * rayon;
 	}
-	
+
 	public double surface() {
-		return Math.PI*Math.pow(rayon, 2);
+		return Math.PI * Math.pow(rayon, 2);
 	}
-	
-	
+
+	public double getRayon() {
+		return rayon;
+	}
+
+	public void setRayon(double rayon) {
+		this.rayon = rayon;
+	}
+
 }
