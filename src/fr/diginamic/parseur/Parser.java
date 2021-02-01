@@ -11,6 +11,7 @@ public class Parser {
 
 	public static Expression parse(String chaine) {
 
+		// Retrouve dans la chaine si + ou / ou * ou - existe
 		Pattern p = Pattern.compile("[+|/|\\*|-]");
 		Matcher m = p.matcher(chaine);
 

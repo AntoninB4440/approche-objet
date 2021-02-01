@@ -48,8 +48,8 @@ public class Expression {
 
 	@Override
 	public String toString() {
-		return "Expression [operateur=" + operateur + ", membreGauche=" + membreGauche + ", membreDroite="
-				+ membreDroite + "]";
+		return "Expression dont l'operateur est " + operateur + " , le membreGauche vaut " + membreGauche
+				+ " et le membreDroite vaut " + membreDroite;
 	}
 
 	public char getOperateur() {
