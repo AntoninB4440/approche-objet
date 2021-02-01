@@ -71,7 +71,7 @@ public class Spectacle {
 
 	@Override
 	public String toString() {
-		return "Spectacle [ nom : " + nom + ", type : " + type + ", tarif : " + tarif + " €, capaciteMax : "
+		return "\nSpectacle [ nom : " + nom + ", type : " + type + ", tarif : " + tarif + " €, capaciteMax : "
 				+ capaciteMax + " personnes, nbInscrits : " + nbInscrits + " ]";
 	}
 
