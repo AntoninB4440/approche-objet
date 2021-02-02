@@ -1,15 +1,10 @@
-package listes;
+package sets;
 
-public class Ville {
+public class Pays {
 
 	private String nom;
 	private int nbHabitant;
-
-	public Ville(String nom, int nbHabitant) {
-		super();
-		this.nom = nom;
-		this.nbHabitant = nbHabitant;
-	}
+	private int pibHabitant;
 
 	public String getNom() {
 		return nom;
@@ -27,9 +22,12 @@ public class Ville {
 		this.nbHabitant = nbHabitant;
 	}
 
-	@Override
-	public String toString() {
-		return "\n" + nom + " avec " + nbHabitant + " habitants";
+	public int getPibHabitant() {
+		return pibHabitant;
+	}
+
+	public void setPibHabitant(int pibHabitant) {
+		this.pibHabitant = pibHabitant;
 	}
 
 }
