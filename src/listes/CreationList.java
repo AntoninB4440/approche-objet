@@ -7,7 +7,7 @@ public class CreationList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		ArrayList<Integer> arrayList = new ArrayList<>();
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
 		for (int i = 1; i <= 100; i++) {
 			arrayList.add(i);
 		}
