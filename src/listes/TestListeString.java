@@ -12,6 +12,8 @@ public class TestListeString {
 		ArrayList<String> listeVille = new ArrayList<String>();
 		Collections.addAll(listeVille, "Nice", "Carcassonne", "Narbonne", "Lyon", "Foix", "Pau", "Marseille", "Tarbes");
 
+		// Collections.sort(listeVille, Comparator.comparing(s -> s.length()));
+
 		int nbLettres = 0;
 		String motGrand = null;
 		for (String string : listeVille) {
