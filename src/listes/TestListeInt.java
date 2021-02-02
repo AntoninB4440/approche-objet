@@ -21,10 +21,10 @@ public class TestListeInt {
 			}
 		}
 
-		System.out.println("\nL'élément le plus grand le listeInt est : " + nbGrand);
+		System.out.println("\nL'élément le plus grand de listeInt est : " + nbGrand);
 
 		// Avec la méthode static max de Collection
-		System.out.println("\nL'élément le plus grand le listeInt avec la méthode static max de Collections est : "
+		System.out.println("\nL'élément le plus grand de listeInt avec la méthode static max de Collections est : "
 				+ Collections.max(listeInt));
 
 		Integer nbPetit = 0;
@@ -35,7 +35,7 @@ public class TestListeInt {
 		}
 
 		// Avec la méthode static max de Collection
-		System.out.println("\nL'élément le plus grand le listeInt avec la méthode static max de Collections est : "
+		System.out.println("\nL'élément le plus petit de listeInt avec la méthode static min de Collections est : "
 				+ Collections.min(listeInt));
 		listeInt.remove(nbPetit);
 
