@@ -13,12 +13,14 @@ public class FusionList {
 		liste1.add("Vert");
 		liste1.add("Orange");
 		System.out.println("Contenu de la liste 1: " + liste1);
+		System.out.println("---------------");
 
 		List<String> liste2 = new ArrayList<String>();
 		liste2.add("Blanc");
 		liste2.add("Bleu");
 		liste2.add("Orange");
 		System.out.println("\nContenu de la liste 2 : " + liste2);
+		System.out.println("---------------");
 
 		List<String> liste3 = new ArrayList<String>();
 

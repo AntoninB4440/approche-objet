@@ -2,6 +2,7 @@ package essais;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 import listes.Ville;
 
@@ -43,6 +44,17 @@ public class TestVilles {
 		Villes.remove(villeMin);
 
 		System.out.println("\nListe des villes restantes après supression de la plus petite : " + Villes);
+
+		Iterator<Ville> iter = Villes.iterator();
+		while (iter.hasNext()) {
+			Ville ville = iter.next();
+			if (ville.getNbHabitant() > 100_000) {
+				ville.setNom(ville.getNom().toUpperCase());
+			}
+		}
+
+		System.out.println("\nListe des villes avec les villes > 100000 habitants en capital : " + Villes);
+
 	}
 
 }
