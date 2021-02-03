@@ -22,17 +22,17 @@ public class CreationEtManipulationMap {
 
 		Iterator<Integer> iterKey = mapVilles.keySet().iterator();
 
-		System.out.print("Affichage des clés de mapVilles : ");
+		System.out.print("Affichage des clés de mapVilles : \n");
 		while (iterKey.hasNext()) {
 			Integer numDep = iterKey.next();
-			System.out.print(numDep + " ");
+			System.out.println(numDep + " ");
 		}
 
 		System.out.println("\n-----------------");
 
-		System.out.print("Affichage des values de mapVilles : ");
+		System.out.print("Affichage des values de mapVilles : \n");
 		for (String string : mapVilles.values()) {
-			System.out.print(string + " ");
+			System.out.println(string + " ");
 		}
 
 		System.out.println("\n-----------------");
