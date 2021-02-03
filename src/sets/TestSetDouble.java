@@ -19,8 +19,11 @@ public class TestSetDouble {
 
 		System.out.println("Les éléments de la HastSet de Doubles sont : " + Doubles);
 
-		double max = 0;
+		Double max = null;
 		for (Double double1 : Doubles) {
+			if (max == null) {
+				max = double1;
+			}
 			if (double1 > max) {
 				max = double1;
 			}

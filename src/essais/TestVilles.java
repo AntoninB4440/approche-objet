@@ -16,7 +16,7 @@ public class TestVilles {
 				new Ville("Narbonne", 53_400), new Ville("Lyon", 484_000), new Ville("Foix", 9_700),
 				new Ville("Pau", 77_200), new Ville("Marseille", 850_700), new Ville("Tarbes", 40_600));
 
-		Ville villeMax = null;
+		Ville villeMax = Villes.get(0);
 		int nbHabitant = 0;
 		for (Ville ville : Villes) {
 			if (ville.getNbHabitant() > nbHabitant) {
@@ -33,7 +33,7 @@ public class TestVilles {
 		// System.out.println("La ville la plus peuplée est : " + villeMax);
 
 		int nbHabitant2 = Villes.get(0).getNbHabitant();
-		Ville villeMin = null;
+		Ville villeMin = Villes.get(0);
 
 		for (Ville ville : Villes) {
 			if (ville.getNbHabitant() < nbHabitant2) {
