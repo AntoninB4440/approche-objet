@@ -15,9 +15,18 @@ public class TestTriVille {
 				new Ville("Narbonne", 53_400), new Ville("Lyon", 484_000), new Ville("Foix", 9_700),
 				new Ville("Pau", 77_200), new Ville("Marseille", 850_700), new Ville("Tarbes", 40_600));
 
+		// Tri des villes par ordre alphabétique (pensez à switcher la méthode compareTo
+		// dans la classe Ville
+		// Collections.sort(Villes);
+
+		// System.out.println("Liste de ville par ordre alphabétique : \n" + Villes);
+
+		// Tri suivant le nombre d'habitant
+
 		Collections.sort(Villes);
 
-		System.out.println("Liste de ville par ordre alphabétique : \n" + Villes);
+		System.out.println("Liste de ville par nombre d'habitant : \n" + Villes);
+
 	}
 
 }

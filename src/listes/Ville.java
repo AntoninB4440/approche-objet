@@ -32,10 +32,22 @@ public class Ville implements Comparable<Ville> {
 		return " " + nom + " avec " + nbHabitant + " habitants\n";
 	}
 
+//	@Override
+//	public int compareTo(Ville autre) {
+//		// TODO Auto-generated method stub
+//		return this.nom.compareTo(autre.getNom());
+//	}
+
 	@Override
 	public int compareTo(Ville autre) {
 		// TODO Auto-generated method stub
-		return this.nom.compareTo(autre.getNom());
+		if (this.nbHabitant > autre.getNbHabitant()) {
+			return 1;
+		} else if (this.nbHabitant < autre.getNbHabitant()) {
+			return -1;
+		} else {
+			return 0;
+		}
 	}
 
 }
