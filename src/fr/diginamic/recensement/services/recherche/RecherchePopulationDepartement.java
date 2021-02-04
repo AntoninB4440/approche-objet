@@ -15,6 +15,7 @@ public class RecherchePopulationDepartement extends MenuService {
 	public void traiter(Recensement recensement, Scanner scanner) {
 
 		// TODO Auto-generated method stub
+		System.out.println("---------- Affichage de la population d'un département ----------\n");
 		System.out.print("Veuillez choisir un département : ");
 		numDepartement = scanner.nextLine();
 		System.out.println();

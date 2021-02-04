@@ -31,9 +31,7 @@ public class ClassementDepartementPopulation extends MenuService {
 			classementDepartement.put(departementVille, populationDepartement);
 		}
 
-		// System.out.println(classementRegion.values());
-
-		System.out.println("Les 10 département les plus peuplés sont : \n");
+		System.out.println("---------- Affichage des 10 département les plus peuplés de France ----------\n");
 		classementDepartement.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
 				.limit(10).forEach(entry -> {
 					System.out.println("Département : " + entry.getKey() + " | Habitants : " + entry.getValue());

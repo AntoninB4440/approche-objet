@@ -12,6 +12,9 @@ import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.MenuService;
 import fr.diginamic.recensement.services.classement.ClassementDepartementPopulation;
 import fr.diginamic.recensement.services.classement.ClassementRegionPopulation;
+import fr.diginamic.recensement.services.classement.ClassementVillePopulationDepartement;
+import fr.diginamic.recensement.services.classement.ClassementVillePopulationFrance;
+import fr.diginamic.recensement.services.classement.ClassementVillePopulationRegion;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationDepartement;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationVille;
@@ -72,6 +75,21 @@ public class Application {
 			case 5:
 				ClassementDepartementPopulation recherche4 = new ClassementDepartementPopulation();
 				recherche4.traiter(recensement, scanner);
+				break;
+			case 6:
+				ClassementVillePopulationDepartement recherche5 = new ClassementVillePopulationDepartement();
+				recherche5.traiter(recensement, scanner);
+				break;
+			case 7:
+				ClassementVillePopulationRegion recherche6 = new ClassementVillePopulationRegion();
+				recherche6.traiter(recensement, scanner);
+				break;
+			case 8:
+				ClassementVillePopulationFrance recherche7 = new ClassementVillePopulationFrance();
+				recherche7.traiter(recensement, scanner);
+				break;
+			case 9:
+				System.out.println("Vous allez sortir du programme\n");
 				break;
 			default:
 				System.out.println("Veuillez choisir une option valable ou sortir du programme");

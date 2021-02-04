@@ -13,6 +13,8 @@ public class RecherchePopulationVille extends MenuService {
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 		// TODO Auto-generated method stub
+
+		System.out.println("---------- Affichage de la population d'une ville ----------\n");
 		System.out.print("Veuillez choisir une ville : ");
 		nomVille = scanner.nextLine();
 		System.out.println();

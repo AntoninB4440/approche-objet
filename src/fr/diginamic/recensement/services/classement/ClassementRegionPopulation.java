@@ -33,7 +33,7 @@ public class ClassementRegionPopulation extends MenuService {
 
 		// System.out.println(classementRegion.values());
 
-		System.out.println("Les 10 régions les plus peuplés sont : \n");
+		System.out.println("---------- Affichage des 10 régions les plus peuplées de France ----------\n");
 		classementRegion.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).limit(10)
 				.forEach(entry -> {
 					System.out.println("Région : " + entry.getKey() + " | Habitants : " + entry.getValue());

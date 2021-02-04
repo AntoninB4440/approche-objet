@@ -15,7 +15,7 @@ public class RecherchePopulationRegion extends MenuService {
 	public void traiter(Recensement recensement, Scanner scanner) {
 		// TODO Auto-generated method stub
 
-		// TODO Auto-generated method stub
+		System.out.println("---------- Affichage de la population d'une région ----------\n");
 		System.out.print("Veuillez choisir un département : ");
 		nomRegion = scanner.nextLine();
 		System.out.println();
