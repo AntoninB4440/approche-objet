@@ -26,12 +26,10 @@ public class RecherchePopulationDepartement extends MenuService {
 		for (Ville ville : recensement.getVilles()) {
 			if (ville.getCodeDepartement().equals(numDepartement)) {
 				nbHabitantDepartement += ville.getPopulationTotale();
-				listeVilleDep.add(ville.getPopulationTotale());
 			}
 		}
 		System.out.println(
 				"La population du département " + numDepartement + " est de : " + nbHabitantDepartement + " habitants");
-		System.out.println(listeVilleDep);
 
 		System.out.println();
 	}
