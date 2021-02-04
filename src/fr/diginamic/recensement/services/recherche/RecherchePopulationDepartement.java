@@ -1,7 +1,5 @@
 package fr.diginamic.recensement.services.recherche;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 import fr.diginamic.recensement.entites.Recensement;
@@ -15,7 +13,6 @@ public class RecherchePopulationDepartement extends MenuService {
 
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
-		List<Integer> listeVilleDep = new ArrayList<Integer>();
 
 		// TODO Auto-generated method stub
 		System.out.print("Veuillez choisir un département : ");

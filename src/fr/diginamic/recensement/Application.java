@@ -11,6 +11,7 @@ import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.MenuService;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationDepartement;
+import fr.diginamic.recensement.services.recherche.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationVille;
 
 public class Application {
@@ -57,6 +58,10 @@ public class Application {
 			case 2:
 				RecherchePopulationDepartement recherche1 = new RecherchePopulationDepartement();
 				recherche1.traiter(recensement, scanner);
+				break;
+			case 3:
+				RecherchePopulationRegion recherche2 = new RecherchePopulationRegion();
+				recherche2.traiter(recensement, scanner);
 				break;
 			default:
 				System.out.println("Veuillez choisir une option valable ou sortir du programme");
