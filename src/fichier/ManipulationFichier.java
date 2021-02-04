@@ -44,7 +44,7 @@ public class ManipulationFichier {
 		for (String string : lines) {
 			String[] tokens = string.split(";");
 			if (Integer.parseInt(tokens[9].trim().replaceAll(" ", "")) > 25000) {
-				Collections.addAll(lines2, tokens[6] + ";" + tokens[0] + ";" + tokens[9]);
+				Collections.addAll(lines2, tokens[6] + ";" + tokens[2] + ";" + tokens[9]);
 			}
 		}
 
