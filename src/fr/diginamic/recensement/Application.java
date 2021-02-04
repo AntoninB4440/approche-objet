@@ -10,6 +10,8 @@ import java.util.Scanner;
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.MenuService;
+import fr.diginamic.recensement.services.classement.ClassementDepartementPopulation;
+import fr.diginamic.recensement.services.classement.ClassementRegionPopulation;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationDepartement;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationVille;
@@ -62,6 +64,14 @@ public class Application {
 			case 3:
 				RecherchePopulationRegion recherche2 = new RecherchePopulationRegion();
 				recherche2.traiter(recensement, scanner);
+				break;
+			case 4:
+				ClassementRegionPopulation recherche3 = new ClassementRegionPopulation();
+				recherche3.traiter(recensement, scanner);
+				break;
+			case 5:
+				ClassementDepartementPopulation recherche4 = new ClassementDepartementPopulation();
+				recherche4.traiter(recensement, scanner);
 				break;
 			default:
 				System.out.println("Veuillez choisir une option valable ou sortir du programme");
