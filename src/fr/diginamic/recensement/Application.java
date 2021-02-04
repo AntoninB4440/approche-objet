@@ -5,9 +5,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Scanner;
 
 import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
+import fr.diginamic.recensement.services.MenuService;
+import fr.diginamic.recensement.services.recherche.RecherchePopulationDepartement;
+import fr.diginamic.recensement.services.recherche.RecherchePopulationVille;
 
 public class Application {
 
@@ -30,12 +34,39 @@ public class Application {
 			String codeDepartement = villeInfo[2];
 			String codeCommune = villeInfo[5];
 			String nomCommune = villeInfo[6];
-			int populationTotale = Integer.parseInt(villeInfo[7].replace(" ", "").trim());
+			int populationTotale = Integer.parseInt(villeInfo[9].replace(" ", "").trim());
 
 			Ville ville = new Ville(codeRegion, nomRegion, codeDepartement, codeCommune, nomCommune, populationTotale);
 
 			recensement.getVilles().add(ville);
 		}
+
+		System.out.println(recensement.getVilles().size());
+
+		Scanner scanner = new Scanner(System.in);
+		int userChoice = 0;
+
+		while (userChoice != 9) {
+			System.out.println("-----------------");
+			userChoice = Integer.parseInt(MenuService.affichage(scanner));
+			switch (userChoice) {
+			case 1:
+				RecherchePopulationVille recherche = new RecherchePopulationVille();
+				recherche.traiter(recensement, scanner);
+				break;
+			case 2:
+				RecherchePopulationDepartement recherche1 = new RecherchePopulationDepartement();
+				recherche1.traiter(recensement, scanner);
+				break;
+			default:
+				System.out.println("Veuillez choisir une option valable ou sortir du programme");
+				break;
+			}
+
+		}
+
+		System.out.println("Fermeture du programme, Au revoir");
+		scanner.close();
 
 	}
 
