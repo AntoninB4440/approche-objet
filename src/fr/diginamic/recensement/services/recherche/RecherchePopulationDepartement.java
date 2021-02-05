@@ -6,11 +6,29 @@ import fr.diginamic.recensement.entites.Recensement;
 import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.MenuService;
 
+/**
+ * Classe instanciable pour effectuer la recherche d'un département afin
+ * d'afficher sa population
+ * 
+ * @author anton
+ *
+ */
+
 public class RecherchePopulationDepartement extends MenuService {
 
 	private String numDepartement;
 	private int nbHabitantDepartement;
 
+	/**
+	 * Methode de traitement pour la recherche d'un département afin d'afficher sa
+	 * population. L'utilisateur choisit un département (ex: 64) Parcours de la
+	 * liste de ville, accumulation de la population si la ville fait partie du
+	 * département choisit. Affichage de la population totale et du département une
+	 * fois le parcours terminé
+	 * 
+	 * @param recensement
+	 * @param scanner
+	 */
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 

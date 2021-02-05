@@ -4,8 +4,22 @@ import java.util.Scanner;
 
 import fr.diginamic.recensement.entites.Recensement;
 
+/**
+ * Classe abstraite avec méthode static gérant l'affichage des options et
+ * méthode abstraite pour signature
+ * 
+ * @author anton
+ *
+ */
 public abstract class MenuService {
 
+	/**
+	 * Méthode static gérant l'affichage et retournant le choix de l'utilisateur ex
+	 * : (1 - pour la population d'une ville choisie)
+	 * 
+	 * @param scanner
+	 * @return L'affichage des options et l'option choisit par l'utilisateur
+	 */
 	public static String affichage(Scanner scanner) {
 		System.out.println("Choix d'option :");
 		System.out.println("1 - Population d'une ville selectionnée");
@@ -20,5 +34,12 @@ public abstract class MenuService {
 		return scanner.nextLine();
 	}
 
+	/**
+	 * Méthode abstraite servant de signature pour les classes filles de MenuService
+	 * pour le traitement du choix de l'utilisateur
+	 * 
+	 * @param recensement
+	 * @param scanner
+	 */
 	public abstract void traiter(Recensement recensement, Scanner scanner);
 }
