@@ -8,8 +8,23 @@ import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.MenuService;
 import fr.diginamic.recensement.services.comparateur.ComparatorHabitantDecroissant;
 
+/**
+ * Classe instanciable héritant de MenuService pour afficher les 10 villes les
+ * plus peuplés de France
+ * 
+ * @author anton
+ *
+ */
 public class ClassementVillePopulationFrance extends MenuService {
 
+	/**
+	 * Méthode pour afficher les 10 villes les plus peuplées de France. La liste de
+	 * ville est triée via un Comparator dans l'ordre décroissant puis L'affichage
+	 * s'effectue avec un forEach des 10 premiers éléments parcouru via un stream
+	 * 
+	 * @param recensement
+	 * @param scanner
+	 */
 	@Override
 	public void traiter(Recensement recensement, Scanner scanner) {
 

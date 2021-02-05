@@ -21,7 +21,7 @@ public class ClassementDepartementPopulation extends MenuService {
 	/**
 	 * Méthode pour afficher les 10 départements les plus peuplés. Parcours la liste
 	 * de ville du recensement, accumule la population d'un département au fur et à
-	 * mesure Par ligne les informations sont stockées dans une HashMap via des clé
+	 * mesure. Par ligne les informations sont stockées dans une HashMap via des clé
 	 * valeur (key : departement, valeur: PopulationTotale) L'affichage s'effectue
 	 * avec un forEach de 10 entrées retournées par un Set sorted dans l'ordre
 	 * inverse
