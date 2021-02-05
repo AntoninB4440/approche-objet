@@ -7,8 +7,8 @@ import fr.diginamic.recensement.entites.Ville;
 import fr.diginamic.recensement.services.MenuService;
 
 /**
- * Classe instanciable pour effectuer la recherche d'une ville afin d'afficher
- * sa population
+ * Classe instanciable héritant de MenuService pour effectuer la recherche d'une
+ * ville afin d'afficher sa population
  * 
  * @author anton
  *
