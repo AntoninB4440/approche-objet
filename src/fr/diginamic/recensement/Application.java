@@ -19,6 +19,13 @@ import fr.diginamic.recensement.services.recherche.RecherchePopulationDepartemen
 import fr.diginamic.recensement.services.recherche.RecherchePopulationRegion;
 import fr.diginamic.recensement.services.recherche.RecherchePopulationVille;
 
+/**
+ * Classe de démarrage de l'application pour la recherche et l'affichage des
+ * populations suivant les villes/regions/département
+ * 
+ * @author anton
+ *
+ */
 public class Application {
 
 	public static void main(String[] args) throws IOException {

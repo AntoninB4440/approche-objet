@@ -1,5 +1,11 @@
 package fr.diginamic.recensement.entites;
 
+/**
+ * Classe Ville instaciable afin de créer un objet de type Ville
+ * 
+ * @author anton
+ *
+ */
 public class Ville {
 
 	private String codeRegion;
@@ -10,6 +16,9 @@ public class Ville {
 	private int populationTotale;
 
 	/**
+	 * Constructeur de la classe Ville avec les informations suivantes : codeRegion,
+	 * nomRegion, codeDepartement, codeCommune, nomCommune et la populationTotale
+	 * 
 	 * @param codeRegion
 	 * @param nomRegion
 	 * @param codeDepartement
