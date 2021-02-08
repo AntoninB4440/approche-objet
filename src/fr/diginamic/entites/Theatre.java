@@ -3,13 +3,13 @@ package fr.diginamic.entites;
 public class Theatre {
 
 	private String nom;
-	private int capacitéMax;
+	private int capaciteMax;
 	private int totalClient = 0;
 	private double recetteDouble;
 
-	public Theatre(String nom, int capacitéMax) {
+	public Theatre(String nom, int capaciteMax) {
 		this.nom = nom;
-		this.capacitéMax = capacitéMax;
+		this.capaciteMax = capaciteMax;
 	}
 
 	public String getNom() {
@@ -20,12 +20,12 @@ public class Theatre {
 		this.nom = nom;
 	}
 
-	public int getCapacitéMax() {
-		return capacitéMax;
+	public int getCapaciteMax() {
+		return capaciteMax;
 	}
 
-	public void setCapacitéMax(int capacitéMax) {
-		this.capacitéMax = capacitéMax;
+	public void setCapaciteMax(int capaciteMax) {
+		this.capaciteMax = capaciteMax;
 	}
 
 	public int getTotalClient() {
@@ -37,13 +37,13 @@ public class Theatre {
 	}
 
 	public void inscription(int nbClient, double prixPlace) {
-		if (capacitéMax >= totalClient && (nbClient > 0 && prixPlace > 0)) {
-			if (capacitéMax - totalClient > nbClient) {
+		if (capaciteMax >= totalClient && (nbClient > 0 && prixPlace > 0)) {
+			if (capaciteMax - totalClient > nbClient) {
 				totalClient += nbClient;
 				recetteDouble += nbClient * prixPlace;
-			} else if (capacitéMax - totalClient <= nbClient) {
-				recetteDouble += (capacitéMax - totalClient) * prixPlace;
-				totalClient += capacitéMax - (totalClient);
+			} else if (capaciteMax - totalClient <= nbClient) {
+				recetteDouble += (capaciteMax - totalClient) * prixPlace;
+				totalClient += capaciteMax - (totalClient);
 				System.out.println(theatreComplet());
 			}
 		} else {
@@ -53,12 +53,12 @@ public class Theatre {
 
 	private String theatreComplet() {
 		// TODO Auto-generated method stub
-		return "Désolé le Théatre est complet : " + capacitéMax + " personnes max";
+		return "Dï¿½solï¿½ le Thï¿½atre est complet : " + capaciteMax + " personnes max";
 	}
 
 	@Override
 	public String toString() {
-		return "Theatre [nom=" + nom + ", capacitéMax=" + capacitéMax + ", totalClient=" + totalClient
+		return "Theatre [nom=" + nom + ", capacitï¿½Max=" + capaciteMax + ", totalClient=" + totalClient
 				+ ", recetteDouble=" + recetteDouble + "]";
 	}
 
