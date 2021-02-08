@@ -12,6 +12,16 @@ public class Pays {
 		this.pibHabitant = pibHabitant;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if (!(obj instanceof Pays)) {
+			return false;
+		}
+		return this.nom.equals(((Pays) obj).getNom()) && this.nbHabitant == ((Pays) obj).getNbHabitant()
+				&& this.pibHabitant == ((Pays) obj).getPibHabitant();
+	}
+
 	/**
 	 * @return the nom
 	 */

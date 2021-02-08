@@ -3,8 +3,6 @@ package sets;
 import java.util.Collections;
 import java.util.HashSet;
 
-import sets.Pays;
-
 public class TestPays {
 
 	public static void main(String[] args) {
@@ -12,6 +10,7 @@ public class TestPays {
 
 		HashSet<Pays> Payss = new HashSet<Pays>();
 		Collections.addAll(Payss, new Pays("USA", 0, 0));
+
 	}
 
 }
