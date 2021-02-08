@@ -14,7 +14,7 @@ public class TestDates {
 		System.out.println(formatage.format(date1));
 
 		Date date2 = new Date(116, 4, 19, 23, 59, 30);
-		SimpleDateFormat formatage2 = new SimpleDateFormat("YYYY/MM/dd hh:mm:ss");
+		SimpleDateFormat formatage2 = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss");
 		System.out.println(formatage2.format(date2));
 
 		Date date3 = new Date();
