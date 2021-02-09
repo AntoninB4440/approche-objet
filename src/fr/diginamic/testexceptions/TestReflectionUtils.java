@@ -9,7 +9,7 @@ public class TestReflectionUtils {
 
 		Ville ville = new Ville("Marseille", 158000);
 		try {
-			ReflectionUtils.afficherAttributs(null);
+			ReflectionUtils.afficherAttributs(ville);
 		} catch (IllegalArgumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
